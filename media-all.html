@@ -113,10 +113,10 @@
                               <span class="sub-menu__title _p4u">Про епархию</span>
                               <ul class="sub-menu__list">
                                 <li class="sub-menu__item">
-                                  <a class="sub-menu__link" href="./404.html">Хронология епархии</a>
+                                  <a class="sub-menu__link" href="./history.html">Хронология епархии</a>
                                 </li>
                                 <li class="sub-menu__item">
-                                  <a class="sub-menu__link" href="./404.html">Архиерей</a>
+                                  <a class="sub-menu__link" href="./biography.html">Архиерей</a>
                                 </li>
                                 <li class="sub-menu__item">
                                   <a class="sub-menu__link" href="./dyhovenstvo.html">
@@ -292,11 +292,100 @@
           <div class="container">
             <div class="catalog__body">
               <div class="grid">
-                <div class="grid__filter">фильтры</div>
+                <div class="grid__filter">
+                  <div class="filters">
+                    <button
+                      class="filters__btn filters__btn_main btn btn_contour icon-filter"
+                      type="button"
+                    >
+                      <span>Фильтр по категориям</span>
+                    </button>
+                    <form class="filters__body" action="#">
+                      <div class="filters-reset">
+                        <div class="filters-reset__text _h6">Фильтр по медиа</div>
+                        <button class="filters-reset__btn" type="reset">Сбросить все</button>
+                      </div>
+                      <div class="filter">
+                        <ul class="filter__list">
+                          <li class="filter__item">
+                            <div class="filter__name _p2">Основная категория поиска</div>
+                            <ul class="options">
+                              <li class="options__item">
+                                <label class="option">
+                                  <input class="option__body" type="radio" name="option" checked>
+                                  <span class="option__btn btn btn_contour">Все</span>
+                                </label>
+                              </li>
+                              <li class="options__item">
+                                <label class="option">
+                                  <input class="option__body" type="radio" name="option">
+                                  <span class="option__btn btn btn_contour">Видео</span>
+                                </label>
+                              </li>
+                              <li class="options__item">
+                                <label class="option">
+                                  <input class="option__body" type="radio" name="option">
+                                  <span class="option__btn btn btn_contour">Фотоотчеты</span>
+                                </label>
+                              </li>
+                              <li class="options__item">
+                                <label class="option">
+                                  <input class="option__body" type="radio" name="option">
+                                  <span class="option__btn btn btn_contour">Проповеди</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul class="filter__list" data-one-select>
+                          <li class="filter__item">
+                            <div class="filter__name _p2">Архив медиа</div>
+                            <ul class="options">
+                              <li class="options__item">
+                                <select data-class-modif="default" data-show-selected>
+                                  <option value="">Выберите месяц</option>
+                                  <option value="Январь">Январь</option>
+                                  <option value="Февраль">Февраль</option>
+                                  <option value="Март">Март</option>
+                                  <option value="Апрель">Апрель</option>
+                                  <option value="Май">Май</option>
+                                  <option value="Июнь">Июнь</option>
+                                  <option value="Июль">Июль</option>
+                                  <option value="Август">Август</option>
+                                  <option value="Сентябрь">Сентябрь</option>
+                                  <option value="Октябрь">Октябрь</option>
+                                  <option value="Ноябрь">Ноябрь</option>
+                                  <option value="Декабрь">Декабрь</option>
+                                </select>
+                              </li>
+                              <li class="options__item">
+                                <select data-class-modif="small-grid" data-show-selected>
+                                  <option value="" selected>Выберите год</option>
+                                  <option value="2016">2016</option>
+                                  <option value="2017">2017</option>
+                                  <option value="2018">2018</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2020">2020</option>
+                                  <option value="2021">2021</option>
+                                  <option value="2022">2022</option>
+                                  <option value="2023">2023</option>
+                                  <option value="2024">2024</option>
+                                </select>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="filters__action">
+                        <button class="filters__submit btn btn_accent" type="submit">Показать</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
                 <ul class="grid__items grid__items_col-3">
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-video.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-1.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-1.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-1"></figcaption>
@@ -304,8 +393,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Видео</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -323,7 +411,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-audio.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-2.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-2.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-microphone"></figcaption>
@@ -331,8 +419,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Проповедь</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -350,7 +437,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-video.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-3.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-3.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-1"></figcaption>
@@ -358,8 +445,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Видео</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -377,7 +463,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-photo.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-4.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-4.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-2"><span>2</span></figcaption>
@@ -385,8 +471,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Фотоотчет</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -404,7 +489,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-audio.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-5.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-5.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-microphone"></figcaption>
@@ -412,8 +497,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Проповедь</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -431,7 +515,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-video.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-6.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-6.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-1"></figcaption>
@@ -439,8 +523,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Видео</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -458,7 +541,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-photo.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-1.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-1.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-2"><span>24</span></figcaption>
@@ -466,8 +549,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Фотоотчет</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -485,7 +567,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-audio.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-2.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-2.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-microphone"></figcaption>
@@ -493,8 +575,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Проповедь</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -512,7 +593,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-video.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-3.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-3.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-1"></figcaption>
@@ -520,8 +601,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Видео</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -539,7 +619,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-photo.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-4.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-4.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-camera-2"><span>124</span></figcaption>
@@ -547,8 +627,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Фотоотчет</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -566,7 +645,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-audio.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-5.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-5.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-microphone"></figcaption>
@@ -574,8 +653,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Проповедь</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -593,7 +671,7 @@
                   </li>
                   <li class="grid__item">
                     <article class="card">
-                      <a class="card__link" href="./article.html"></a>
+                      <a class="card__link" href="./media-audio.html"></a>
                       <figure class="card__img-box">
                         <picture><source srcset="./img/content/photo/new-6.webp" type="image/webp"><img class="card__img" src="./img/content/photo/new-6.jpg" alt="Великопостное Богослужение в Серафимовском кафедральном соборе"></picture>
                         <figcaption class="card__img-info icon-microphone"></figcaption>
@@ -601,8 +679,7 @@
                       <div class="card__content">
                         <div class="card__head">
                           <ul class="card__tags tags _p4u">
-                            <li class="tags__item">Новость дня</li>
-                            <li class="tags__item">Архиерей</li>
+                            <li class="tags__item">Проповедь</li>
                           </ul>
                           <time class="card__time _p3" datetime="2024-08-22 19:00">24/04/2024</time>
                         </div>
@@ -663,10 +740,10 @@
                     <h5 class="footer-menu__title">Епархия</h5>
                     <ul class="footer-menu__list">
                       <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="./404.html">О епархии</a>
+                        <a class="footer-menu__link" href="./history.html">О епархии</a>
                       </li>
                       <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="./404.html">Архиерей</a>
+                        <a class="footer-menu__link" href="./biography.html">Архиерей</a>
                       </li>
                       <li class="footer-menu__item">
                         <a class="footer-menu__link" href="./dyhovenstvo.html">Духовенство</a>
@@ -815,9 +892,9 @@
                       </li> -->
                     </ul>
                   </div>
-                  <a class="footer-contacts__btn btn btn_accent" href="./contacts.html#callback"
-                    >Обратная связь</a
-                  >
+                  <a class="footer-contacts__btn btn btn_accent" href="./contacts.html#callback">
+                    Обратная связь
+                  </a>
                 </div>
               </div>
             </div>
@@ -828,9 +905,9 @@
             <div class="footer-info">
               <div class="footer-info__box footer-info__box_copy">
                 <p class="footer-info__text">
-                  <a href="#" target="_blank">&copy; 2024 Златоустовская епархия</a> &mdash;
-                  официальный информационный сайт Русской Православной Церкви. При копировании информации,
-                  ссылка на источник обязательна
+                  <a href="https://zlateparhia.ru/" target="_blank">&copy; 2024 Златоустовская епархия</a
+                  > &mdash; официальный информационный сайт Русской Православной Церкви. При копировании
+                  информации, ссылка на источник обязательна
                 </p>
               </div>
               <div class="footer-info__box footer-info__box_address">
@@ -910,6 +987,15 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="cookie">
+      <h4 class="cookie__title _h6">Cookies</h4>
+      <p class="cookie__text _p2">
+        Для того чтобы наш сайт работал корректно, мы используем куки. Вы можете подробно
+        <a href="./cookies.html">ознакомиться с ними</a>.
+      </p>
+      <button class="cookie__btn btn btn_accent" type="button">Хорошо</button>
     </div>
   </body>
 </html>

@@ -113,10 +113,10 @@
                               <span class="sub-menu__title _p4u">Про епархию</span>
                               <ul class="sub-menu__list">
                                 <li class="sub-menu__item">
-                                  <a class="sub-menu__link" href="./404.html">Хронология епархии</a>
+                                  <a class="sub-menu__link" href="./history.html">Хронология епархии</a>
                                 </li>
                                 <li class="sub-menu__item">
-                                  <a class="sub-menu__link" href="./404.html">Архиерей</a>
+                                  <a class="sub-menu__link" href="./biography.html">Архиерей</a>
                                 </li>
                                 <li class="sub-menu__item">
                                   <a class="sub-menu__link" href="./dyhovenstvo.html">
@@ -291,7 +291,113 @@
         <section class="news">
           <div class="container">
             <div class="news__body">
-              <div class="news__filter">фильтры</div>
+              <div class="news__filter">
+                <div class="filters">
+                  <button
+                    class="filters__btn filters__btn_main btn btn_contour icon-filter"
+                    type="button"
+                  >
+                    <span>Фильтр по новостям</span>
+                  </button>
+                  <form class="filters__body" action="#">
+                    <div class="filters-reset">
+                      <div class="filters-reset__text _h6">Фильтр по новостям</div>
+                      <button class="filters-reset__btn" type="reset">Сбросить все</button>
+                    </div>
+                    <div class="filter">
+                      <ul class="filter__list" data-one-select>
+                        <li class="filter__item">
+                          <div class="filter__name _p2">Основная категория поиска</div>
+                          <select data-class-modif="response" data-show-selected>
+                            <option value="Все новости" selected>Все новости</option>
+                            <option value="Деятельность епархии">Деятельность епархии</option>
+                            <option value="Архиерей">Архиерей</option>
+                            <option value="Новости приходов">Новости приходов</option>
+                          </select>
+                        </li>
+                        <li class="filter__item">
+                          <div class="filter__name _p2">Деятельность епархии</div>
+                          <select data-class-modif="response" data-show-selected>
+                            <option value="" selected>Деятельность</option>
+                            <option value="Социальная">Социальная</option>
+                            <option value="Молодежная">Молодежная</option>
+                            <option value="Миссионерская">Миссионерская</option>
+                            <option value="Образовательная">Образовательная</option>
+                            <option value="Информационно-издательская">Информационно-издательская</option>
+                            <option value="Взаимодействие с силовыми структурами">
+                              Взаимодействие с силовыми структурами
+                            </option>
+                          </select>
+                        </li>
+                        <li class="filter__item">
+                          <div class="filter__name _p2">Выберите благочиние</div>
+                          <select data-class-modif="response" data-show-selected>
+                            <option value="" selected>Выберите благочиние</option>
+                            <option value="Ашинское">Ашинское</option>
+                            <option value="Златоустовское">Златоустовское</option>
+                            <option value="Катав-Ивановское">Катав-Ивановское</option>
+                            <option value="Кусинское">Кусинское</option>
+                            <option value="Саткинское">Саткинское</option>
+                            <option value="Трехгорное">Трехгорное</option>
+                          </select>
+                        </li>
+                        <li class="filter__item">
+                          <div class="filter__name _p2">Выберите храм</div>
+                          <select data-class-modif="search" data-search data-show-selected>
+                            <option value="" selected>Храм</option>
+                            <option value="Храм во имя великомученика Димитрия Солунского">
+                              Храм во имя великомученика Димитрия Солунского
+                            </option>
+                            <option value="Храм во имя святителя Дионисия Ареопагита">
+                              Храм во имя святителя Дионисия Ареопагита
+                            </option>
+                            <option value="Храм в честь Введения Пресвятой Богородицы">
+                              Храм в честь Введения Пресвятой Богородицы
+                            </option>
+                            <option
+                              value="Храм во имя святителя Василия Великого при Богородице-Одигитриевском сестричестве милосердия"
+                            >
+                              Храм во имя святителя Василия Великого при Богородице-Одигитриевском
+                              сестричестве милосердия
+                            </option>
+                            <option value="Храм во имя великомученика Димитрия Солунского">
+                              Храм во имя великомученика Димитрия Солунского
+                            </option>
+                            <option value="Храм в честь Введения Пресвятой Богородицы">
+                              Храм в честь Введения Пресвятой Богородицы
+                            </option>
+                            <option
+                              value="Храм во имя святителя Василия Великого при Богородице-Одигитриевском сестричестве милосердия"
+                            >
+                              Храм во имя святителя Василия Великого при Богородице-Одигитриевском
+                              сестричестве милосердия
+                            </option>
+                            <option value="Храм во имя великомученика Димитрия Солунского">
+                              Храм во имя великомученика Димитрия Солунского
+                            </option>
+                            <option value="Храм во имя святителя Дионисия Ареопагита">
+                              Храм во имя святителя Дионисия Ареопагита
+                            </option>
+                          </select>
+                        </li>
+                        <li class="filter__item filter__item_reset">
+                          <button class="filter__reset btn btn_dark" type="reset">Сбросить фильтр</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="filters__action">
+                      <button class="filters__submit btn btn_accent" type="submit">
+                        Показать новости
+                      </button>
+                    </div>
+                  </form>
+                  <div class="filters__bar" data-watch="767">
+                    <button class="filters__btn filters__btn_sticky btn btn_contour" type="button">
+                      Фильтр по новостям
+                    </button>
+                  </div>
+                </div>
+              </div>
               <ul class="news__list">
                 <li class="news__item">
                   <article class="card">
@@ -613,10 +719,10 @@
                     <h5 class="footer-menu__title">Епархия</h5>
                     <ul class="footer-menu__list">
                       <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="./404.html">О епархии</a>
+                        <a class="footer-menu__link" href="./history.html">О епархии</a>
                       </li>
                       <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="./404.html">Архиерей</a>
+                        <a class="footer-menu__link" href="./biography.html">Архиерей</a>
                       </li>
                       <li class="footer-menu__item">
                         <a class="footer-menu__link" href="./dyhovenstvo.html">Духовенство</a>
@@ -765,9 +871,9 @@
                       </li> -->
                     </ul>
                   </div>
-                  <a class="footer-contacts__btn btn btn_accent" href="./contacts.html#callback"
-                    >Обратная связь</a
-                  >
+                  <a class="footer-contacts__btn btn btn_accent" href="./contacts.html#callback">
+                    Обратная связь
+                  </a>
                 </div>
               </div>
             </div>
@@ -778,9 +884,9 @@
             <div class="footer-info">
               <div class="footer-info__box footer-info__box_copy">
                 <p class="footer-info__text">
-                  <a href="#" target="_blank">&copy; 2024 Златоустовская епархия</a> &mdash;
-                  официальный информационный сайт Русской Православной Церкви. При копировании информации,
-                  ссылка на источник обязательна
+                  <a href="https://zlateparhia.ru/" target="_blank">&copy; 2024 Златоустовская епархия</a
+                  > &mdash; официальный информационный сайт Русской Православной Церкви. При копировании
+                  информации, ссылка на источник обязательна
                 </p>
               </div>
               <div class="footer-info__box footer-info__box_address">
@@ -860,6 +966,15 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="cookie">
+      <h4 class="cookie__title _h6">Cookies</h4>
+      <p class="cookie__text _p2">
+        Для того чтобы наш сайт работал корректно, мы используем куки. Вы можете подробно
+        <a href="./cookies.html">ознакомиться с ними</a>.
+      </p>
+      <button class="cookie__btn btn btn_accent" type="button">Хорошо</button>
     </div>
   </body>
 </html>
